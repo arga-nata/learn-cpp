@@ -12,16 +12,15 @@ using namespace std;
 int main() {
   int angka;
   for (int i = 1; i <= 100; i++) {
-    if (i % 3 == 0) {
-      cout << "Fizz ";
+    if (i % 3 == 0 && i % 5 == 0) {
+      cout << "FizzBuzz\n";
+    } else if (i % 3 == 0) {
+      cout << "Fizz\n";
     } else if (i % 5 == 0) {
-      cout << "Buzz ";
-    } else if (i % 3 == 0 && i % 5 == 0) {
-      cout << "Fizz Buzz ";
+      cout << "Buzz\n";
     } else {
-      cout << i << " ";
+      cout << i << '\n';
     }
   }
-  cout << "Test";
   return 0;
 }
