@@ -7,7 +7,7 @@ int main() {
   cout << "Masukkan sebuah angka: ";
   cin >> angka;
 
-  for (int i = 1; i < angka + 1; i++) {
+  for (int i = 1; i <= angka; i++) {
     faktorial *= i;
   }
   cout << "Faktorial dari " << angka << " adalah " << faktorial;
