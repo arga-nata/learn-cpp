@@ -1,4 +1,7 @@
 {
     "editor.fontFamily": "JetBrains Mono",
     "editor.fontLigatures": true,
+    "files.associations": {
+        "ostream": "cpp"
+    },
 }
