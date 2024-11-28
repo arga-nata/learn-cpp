@@ -1,3 +1,7 @@
+/*Buat program yang meminta pengguna untuk memasukkan 10 angka. Kemudian,
+ * program harus menampilkan angka terbesar dan terkecil di antara angka-angka
+ * tersebut.*/
+
 #include <iostream>
 using namespace std;
 int main() {
