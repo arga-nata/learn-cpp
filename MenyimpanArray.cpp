@@ -5,21 +5,16 @@ array tersebut.*/
 
 #include <iostream>
 using namespace std;
-
 int main() {
-  int angka[10];
-
-  cout << "Masukkan 10 angka: ";
+  int array[10];
+  cout << "Masukkan sebuah angka: \n";
   for (int i = 0; i < 10; i++) {
-    cin >> angka[i];
+    cin >> array[i];
   }
-
   int jumlah = 0;
   for (int i = 0; i < 10; i++) {
-    jumlah += angka[i];
+    jumlah += array[i];
   }
-
-  cout << "Jumlah semua elemen dalam array adalah: " << jumlah;
-
+  cout << "Jumlah dari semua elemen dalam array tersebut adalah: " << jumlah;
   return 0;
 }
