@@ -1,4 +1,4 @@
-/*Buat program yang meminta pengguna untuk memasukkan 10 angka. Kemudian,
+/*Buat program yang meminta pengguna untuk memasukkan 5 angka. Kemudian,
  * program harus menampilkan angka terbesar dan terkecil di antara angka-angka
  * tersebut.*/
 
