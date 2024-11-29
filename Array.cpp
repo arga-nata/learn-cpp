@@ -10,6 +10,7 @@ int main() {
   cout << cars[2] << '\n';
 
   double prices[] = {5.00, 7.50, 9.99, 15.00};
+
   cout << prices[0] << '\n';
   cout << prices[1] << '\n';
   cout << prices[2] << '\n';
