@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+
 int main() {
   string cars[] = {"Corvette", "Mustang", "Camry"};
 
@@ -15,5 +16,6 @@ int main() {
   cout << prices[1] << '\n';
   cout << prices[2] << '\n';
   cout << prices[3] << '\n';
+
   return 0;
 }
