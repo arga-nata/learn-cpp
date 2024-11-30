@@ -7,7 +7,7 @@ int main() {
 
   string cars[] = {"Corvette", "Mustang", "Camry"};
 
-  cars[0] = "Ferrari";
+  cars[0] = "Camaro";
 
   cout << cars[0] << '\n';
   cout << cars[1] << '\n';
