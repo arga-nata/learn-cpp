@@ -12,5 +12,6 @@ int main() {
   cout << num1 << '\n';
   cout << num2 << '\n';
   cout << num3 << '\n';
+
   return 0;
 }
