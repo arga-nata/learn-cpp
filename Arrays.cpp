@@ -2,6 +2,9 @@
 using namespace std;
 
 int main() {
+  // array = a data structure that can hold multiple values value are accessed
+  // by an index number "kind of like a variable that holds multiple values"
+
   string cars[] = {"Corvette", "Mustang", "Camry"};
 
   cars[0] = "Camaro";
