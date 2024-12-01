@@ -9,5 +9,9 @@ int main() {
     cout << students << '\n';
   }
 
+  int grades[] = {65, 72, 81, 93};
+  for (int grades : grades) {
+    cout << grades << '\n';
+  }
   return 0;
 }
