@@ -4,7 +4,7 @@ using namespace std;
 int main() {
   // foreach loop = loop that eases the traversal over an iterable data set
 
-  string students[] = {"Spongebob", "Patrick", "Squidward"};
+  string students[] = {"Spongebob", "Patrick", "Squidward", "Sandy"};
   for (string students : students) {
     cout << students << '\n';
   }
