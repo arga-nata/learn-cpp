@@ -25,6 +25,8 @@ int main() {
     }
 
   } while (guess != num);
+
   cout << "********************************";
+
   return 0;
 }
