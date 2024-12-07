@@ -17,11 +17,11 @@ int main() {
     tries++;
 
     if (guess > num) {
-      cout << "Too high!";
+      cout << "Too high!\n";
     } else if (guess < num) {
-      cout << "Too low!";
+      cout << "Too low!\n";
     } else if (guess == num) {
-      cout << "Thats it";
+      cout << "Correct! # of tries: \n" << tries;
     }
 
   } while (guess != num);
