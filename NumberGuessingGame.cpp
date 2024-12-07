@@ -21,10 +21,10 @@ int main() {
     } else if (guess < num) {
       cout << "Too low!\n";
     } else if (guess == num) {
-      cout << "Correct! # of tries: \n" << tries;
+      cout << "Correct! # of tries: " << tries << '\n';
     }
 
   } while (guess != num);
-
+  cout << "********************************";
   return 0;
 }
