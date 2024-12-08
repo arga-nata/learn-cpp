@@ -15,8 +15,10 @@ int main() {
   player = getUserChoice();
   cout << "Your choice: ";
   showChoice(player);
-  computer = getComputerChoice();
 
+  computer = getComputerChoice();
+  cout << "Computer choice: ";
+  showChoice(computer);
   return 0;
 }
 char getUserChoice() {
