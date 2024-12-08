@@ -16,10 +16,17 @@ int main() {
 char getUserChoice() {
   char player;
   cout << "Rock-Paper-Scissors Game!\n";
-  cout << "************************\n";
-  cout << "'r' for rock\n";
-  cout << "'p' for paper\n";
-  cout << "'s' for scissors\n";
+  do {
+    cout << "Choose one of the following\n";
+    cout << "************************\n";
+    cout << "'r' for rock\n";
+    cout << "'p' for paper\n";
+    cout << "'s' for scissors\n";
+    cin >> player;
+    cout << player;
+    /* code */
+  } while (/* condition */);
+
   return 0;
 }
 char getComputerChoice() { return 0; }
