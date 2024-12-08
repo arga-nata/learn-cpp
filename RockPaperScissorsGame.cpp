@@ -11,6 +11,8 @@ int main() {
   char computer;
 
   player = getUserChoice();
+  cout << "Your choice: ";
+  showChoice(player);
   return 0;
 }
 char getUserChoice() {
@@ -24,11 +26,19 @@ char getUserChoice() {
     cout << "'s' for scissors\n";
     cin >> player;
     cout << player;
-    /* code */
-  } while (/* condition */);
+  } while (player != 'r' && player != 'p' && player != 's');
 
   return 0;
 }
 char getComputerChoice() { return 0; }
-void showChoice(char choice) {}
+void showChoice(char choice) {
+  switch (choice) {
+  case 'r':
+    cout << "Rock'\n";
+    break;
+
+  default:
+    break;
+  }
+}
 void chooseWinner(char player, char computer) {}
