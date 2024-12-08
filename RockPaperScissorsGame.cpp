@@ -15,7 +15,11 @@ int main() {
 }
 char getUserChoice() {
   char player;
-  cout << "Rock-Paper-Scissor Game!";
+  cout << "Rock-Paper-Scissors Game!\n";
+  cout << "************************\n";
+  cout << "'r' for rock\n";
+  cout << "'p' for paper\n";
+  cout << "'s' for scissors\n";
   return 0;
 }
 char getComputerChoice() { return 0; }
