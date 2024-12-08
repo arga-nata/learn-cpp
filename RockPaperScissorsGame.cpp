@@ -74,10 +74,13 @@ void chooseWinner(char player, char computer) {
     } else {
       cout << "You win!\n";
     }
-
     break;
 
-  default:
+  case 'p':
+    if (computer == 'p') {
+      cout << "It's a tie!\n";
+    }
+
     break;
   }
 }
