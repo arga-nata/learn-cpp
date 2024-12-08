@@ -20,6 +20,8 @@ int main() {
   cout << "Computer choice: ";
   showChoice(computer);
 
+  chooseWinner(player, computer);
+
   return 0;
 }
 char getUserChoice() {
@@ -27,7 +29,7 @@ char getUserChoice() {
   cout << "Rock-Paper-Scissors Game!\n";
   do {
     cout << "Choose one of the following\n";
-    cout << "************************\n";
+    cout << "***********************\n";
     cout << "'r' for rock\n";
     cout << "'p' for paper\n";
     cout << "'s' for scissors\n";
@@ -79,8 +81,21 @@ void chooseWinner(char player, char computer) {
   case 'p':
     if (computer == 'p') {
       cout << "It's a tie!\n";
+    } else if (computer == 's') {
+      cout << "You lose!\n";
+    } else {
+      cout << "You win!\n";
     }
+    break;
 
+  case 's':
+    if (computer == 's') {
+      cout << "It's a tie!\n";
+    } else if (computer == 'p') {
+      cout << "You lose!\n";
+    } else {
+      cout << "You win!\n";
+    }
     break;
   }
 }
