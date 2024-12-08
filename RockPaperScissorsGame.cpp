@@ -1,4 +1,6 @@
+#include < ctime>
 #include <iostream>
+
 using namespace std;
 
 char getUserChoice();
@@ -13,6 +15,8 @@ int main() {
   player = getUserChoice();
   cout << "Your choice: ";
   showChoice(player);
+  computer = getComputerChoice();
+
   return 0;
 }
 char getUserChoice() {
@@ -25,19 +29,25 @@ char getUserChoice() {
     cout << "'p' for paper\n";
     cout << "'s' for scissors\n";
     cin >> player;
-    cout << player;
   } while (player != 'r' && player != 'p' && player != 's');
 
+  return player;
+}
+char getComputerChoice() {
+  srand(time(NULL));
+  int num = rand() % 3 + 1;
   return 0;
 }
-char getComputerChoice() { return 0; }
 void showChoice(char choice) {
   switch (choice) {
   case 'r':
-    cout << "Rock'\n";
+    cout << "Rock\n";
     break;
-
-  default:
+  case 'p':
+    cout << "Paper\n";
+    break;
+  case 's':
+    cout << "Scissors\n";
     break;
   }
 }
