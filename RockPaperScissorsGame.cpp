@@ -1,4 +1,4 @@
-#include < ctime>
+#include <ctime>
 #include <iostream>
 
 using namespace std;
@@ -19,6 +19,7 @@ int main() {
   computer = getComputerChoice();
   cout << "Computer choice: ";
   showChoice(computer);
+
   return 0;
 }
 char getUserChoice() {
@@ -63,4 +64,16 @@ void showChoice(char choice) {
     break;
   }
 }
-void chooseWinner(char player, char computer) {}
+void chooseWinner(char player, char computer) {
+  switch (player) {
+  case 'r':
+    if (computer == 'r') {
+      cout << "It's a tie!\n";
+    }
+
+    break;
+
+  default:
+    break;
+  }
+}
