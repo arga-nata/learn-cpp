@@ -5,7 +5,7 @@ void bakePizza();
 void bakePizza(string topping1, string topping2);
 
 int main() {
-  bakePizza("pepperoni");
+  bakePizza("pepperoni", "mushrooms");
 
   return 0;
 }
