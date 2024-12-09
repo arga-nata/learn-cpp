@@ -14,8 +14,9 @@ int main() {
   cout << "Enter side B: ";
   cin >> b;
 
-  cout << "Enter side C: ";
-  cin >> c;
+  c = sqrt(pow(a, 2) + pow(b, 2));
+
+  cout << "Side C: " << c;
 
   return 0;
 }
