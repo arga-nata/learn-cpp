@@ -21,5 +21,9 @@ int main() {
   cout << human1.occupation << '\n';
   cout << human1.age << '\n';
 
+  human1.eat();
+  human1.drink();
+  human1.sleeping();
+
   return 0;
 }
