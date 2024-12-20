@@ -15,5 +15,8 @@ int main() {
   Car car1;
   car1.make;
   car1.model;
+  car1.year;
+  car1.color;
+
   return 0;
 }
