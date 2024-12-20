@@ -13,10 +13,15 @@ public:
 };
 int main() {
   Car car1;
-  car1.make;
-  car1.model;
-  car1.year;
-  car1.color;
+  car1.make = "Ford";
+  car1.model = "Mustang";
+  car1.year = 2023;
+  car1.color = "silver";
+
+  cout << car1.make << '\n';
+  cout << car1.model << '\n';
+  cout << car1.year << '\n';
+  cout << car1.color << '\n';
 
   return 0;
 }
