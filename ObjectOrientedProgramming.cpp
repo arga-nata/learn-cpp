@@ -34,5 +34,9 @@ int main() {
   human1.drink();
   human1.sleeping();
 
+  human2.eat();
+  human2.drink();
+  human2.sleeping();
+
   return 0;
 }
