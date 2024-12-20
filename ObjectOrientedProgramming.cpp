@@ -8,6 +8,7 @@ public:
   int year;
   string color;
 
-  void accelerate() { cout << "You step on the gass!\n"; }
+  void accelerate() { cout << "You step on the gas!\n"; }
+  void brake() { cout << "You step on the brake!\n"; }
 };
 int main() { return 0; }
