@@ -13,7 +13,13 @@ public:
 };
 int main() {
   Human human1;
-  human1.name;
+  human1.name = "Arganata";
+  human1.occupation = "Programmer";
+  human1.age = 21;
+
+  cout << human1.name << '\n';
+  cout << human1.occupation << '\n';
+  cout << human1.age << '\n';
 
   return 0;
 }
