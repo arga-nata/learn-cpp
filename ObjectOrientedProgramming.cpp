@@ -17,9 +17,18 @@ int main() {
   human1.occupation = "Programmer";
   human1.age = 21;
 
+  Human human2;
+  human2.name = "Woz";
+  human2.occupation = "Gamer";
+  human2.age = 21;
+
   cout << human1.name << '\n';
   cout << human1.occupation << '\n';
   cout << human1.age << '\n';
+
+  cout << human2.name << '\n';
+  cout << human2.occupation << '\n';
+  cout << human2.age << '\n';
 
   human1.eat();
   human1.drink();
