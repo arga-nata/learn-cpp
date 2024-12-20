@@ -11,4 +11,9 @@ public:
   void accelerate() { cout << "You step on the gas!\n"; }
   void brake() { cout << "You step on the brake!\n"; }
 };
-int main() { return 0; }
+int main() {
+  Car car1;
+  car1.make;
+  car1.model;
+  return 0;
+}
