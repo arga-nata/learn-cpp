@@ -1,29 +1,23 @@
-/*Soal 17: Fungsi Menemukan Angka Tertinggi dalam Vector
-Buatlah sebuah fungsi bernama findMax yang menerima parameter berupa vector
-bilangan bulat dan mengembalikan nilai tertinggi dari bilangan-bilangan dalam
-vector tersebut.*/
+/*Soal 18: Fungsi Mencari Elemen dalam vector
+Buatlah sebuah fungsi bernama findElement yang menerima dua parameter: sebuah
+vector bilangan bulat dan sebuah bilangan bulat target. Fungsi ini harus
+mengembalikan indeks pertama dari target dalam vector, atau -1 jika target tidak
+ditemukan.*/
 
-#include <algorithm>
 #include <iostream>
 #include <vector>
 using namespace std;
 
-int findMax(vector<int> angka);
+int findElement(vector<int> array);
 
 int main() {
-  vector<int> angka;
-  int nilai;
+  vector<int> array = {10, 20, 30, 40, 50};
 
-  cout << "Masukkan 3 angka: ";
-  for (int i = 0; i < 3; i++) {
-    cin >> nilai;
-    angka.push_back(nilai);
-  }
-  cout << "Nilai tertinggi: " << findMax(angka);
+  findElement(array);
 
   return 0;
 }
-int findMax(vector<int> angka) {
-  int max = *max_element(angka.begin(), angka.end());
-  return max;
+int findElement(vector<int> array) {
+  int target = 10;
+  return 0;
 }
