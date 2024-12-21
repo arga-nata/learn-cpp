@@ -6,12 +6,11 @@
 #include <iostream>
 using namespace std;
 
-float calculate(int angka1, int angka2, char operasi, float hasil);
+float calculate(int angka1, int angka2, char operasi);
 
 int main() {
   int angka1, angka2;
   char operasi;
-  float hasil;
 
   cout << "Masukkan 2 angka!\n";
   cin >> angka1 >> angka2;
@@ -19,30 +18,34 @@ int main() {
   cout << "Masukkan operasi! (+ - * /)\n";
   cin >> operasi;
 
-  cout << "Hasil ";
-  hasil = calculate(angka1, angka2, operasi, hasil);
-  cout << " " << hasil;
+  float hasil = calculate(angka1, angka2, operasi);
+
+  cout << hasil;
 
   return 0;
 }
-float calculate(int angka1, int angka2, char operasi, float hasil) {
+float calculate(int angka1, int angka2, char operasi) {
   switch (operasi) {
   case '+':
-    cout << "penjumlahan dari " << angka1 << " dan " << angka2 << " adalah";
-    hasil = angka1 + angka2;
-    break;
+    cout << "Penjumlahan dari " << angka1 << " dan " << angka2 << " adalah ";
+    return angka1 + angka2;
   case '-':
-    cout << "pengurangan dari " << angka1 << " dan " << angka2 << " adalah";
-    hasil = angka1 - angka2;
-    break;
+    cout << "Pengurangan dari " << angka1 << " dan " << angka2 << " adalah ";
+    return angka1 - angka2;
   case '*':
-    cout << "perkalian dari " << angka1 << " dan " << angka2 << " adalah";
-    hasil = angka1 * angka2;
-    break;
+    cout << "Perkalian dari " << angka1 << " dan " << angka2 << " adalah ";
+    return angka1 * angka2;
   case '/':
-    cout << "pembagian dari " << angka1 << " dan " << angka2 << " adalah";
-    hasil = angka1 / angka2;
-    break;
+    if (angka2 != 0) {
+      cout << "Pembagian dari " << angka1 << " dan " << angka2 << " adalah ";
+      return angka1 / angka2;
+    } else {
+      cout << "Error: Pembagian dengan nol!";
+      return 0;
+    }
+  default:
+    cout << "Error: Operator tidak valid!";
+    return 0;
   }
-  return hasil;
+  return 0;
 }
