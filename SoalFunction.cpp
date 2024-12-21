@@ -32,15 +32,15 @@ float calculate(int angka1, int angka2, char operasi, float hasil) {
     hasil = angka1 + angka2;
     break;
   case '-':
-    cout << "pengurangan";
+    cout << "pengurangan dari " << angka1 << " dan " << angka2 << " adalah";
     hasil = angka1 - angka2;
     break;
   case '*':
-    cout << "perkalian";
+    cout << "perkalian dari " << angka1 << " dan " << angka2 << " adalah";
     hasil = angka1 * angka2;
     break;
   case '/':
-    cout << "pembagian";
+    cout << "pembagian dari " << angka1 << " dan " << angka2 << " adalah";
     hasil = angka1 / angka2;
     break;
   }
