@@ -32,9 +32,7 @@ int findElement(vector<int> array, int target) {
   for (int i = 0; i < array.size(); i++) {
     if (array[i] == target) {
       return i;
-    } else {
-      return -1;
     }
   }
-  return 0;
+  return -1;
 }
