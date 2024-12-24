@@ -5,8 +5,8 @@
 using namespace std;
 
 int main() {
-  int matriks1[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
-  int matriks2[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+  int matriks1[3][3] = {{10, 10, 10}, {10, 10, 10}, {10, 10, 10}};
+  int matriks2[3][3] = {{10, 10, 10}, {10, 10, 10}, {10, 10, 10}};
 
   const int ukuran = 3;
   int hasil[ukuran][ukuran] = {0};
@@ -18,6 +18,8 @@ int main() {
       }
     }
   }
+
+  cout << "Hasil perkalian kedua matriks adalah\n";
   for (int i = 0; i < ukuran; i++) {
     for (int j = 0; j < ukuran; j++) {
       cout << hasil[i][j] << " ";
