@@ -1,27 +1,33 @@
-#include <iostream>
-using namespace std;
+#include <iostream>  // Mengimpor pustaka input-output standar
+using namespace std; // Menggunakan namespace standar
 
 int main() {
-  // && = check if two conditions are true
-  // || = check if at least one of two conditions is true
-  // ! = reverses the logical state of its operand
+  // && = mengecek apakah dua kondisi bernilai benar
+  // || = mengecek apakah minimal salah satu dari dua kondisi bernilai benar
+  // ! = membalikkan keadaan logis dari operannya
 
-  int temp;
-  bool sunny = false;
+  int suhu;           // Deklarasi variabel untuk menyimpan suhu
+  bool cerah = false; // Deklarasi variabel boolean untuk menyimpan status cuaca
+                      // (cerah atau tidak)
 
-  cout << "Enter the temperature: ";
-  cin >> temp;
+  cout << "Masukkan suhu: "; // Meminta pengguna memasukkan suhu
+  cin >> suhu;               // Membaca input suhu dari pengguna
 
-  if (temp <= 0 || temp >= 30) {
-    cout << "The temperature is bad!\n";
+  // Mengecek apakah suhu kurang dari atau sama dengan 0 atau lebih dari atau
+  // sama dengan 30
+  if (suhu <= 0 || suhu >= 30) {
+    cout << "Suhunya buruk!\n"; // Menampilkan pesan jika suhu tidak
+                                // nyaman
   } else {
-    cout << "The temperature is good!\n";
-  }
-  if (!sunny) {
-    cout << "It is cloudy outside!";
-  } else {
-    cout << "It is sunny outside!";
+    cout << "Suhunya baik!\n"; // Menampilkan pesan jika suhu nyaman
   }
 
-  return 0;
+  // Mengecek apakah cuaca tidak cerah
+  if (!cerah) {
+    cout << "Di luar mendung!"; // Menampilkan pesan jika cuaca berawan
+  } else {
+    cout << "Di luar cerah!"; // Menampilkan pesan jika cuaca cerah
+  }
+
+  return 0; // Mengakhiri program
 }
