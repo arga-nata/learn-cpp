@@ -3,28 +3,19 @@ using namespace std;
 
 int main()
 {
-  // break = keluar dari loop
-  // continue = lewati iterasi saat ini
+  cout << "Angka: "; // Mencetak "Angka: " ke konsol
 
-  // Mencetak "Angka: " ke konsol
-  cout << "Angka: ";
+  int keluar = 4; // Mendefinisikan variabel keluar dengan nilai 4
 
-  // Mendefinisikan variabel keluar dengan nilai 4
-  int keluar = 4;
-
-  // Loop dari 1 hingga 10
-  for (int i = 1; i <= 10; i++)
+  for (int i = 1; i <= 10; i++) // Loop dari 1 hingga 10
   {
-    // Jika i sama dengan keluar, lewati iterasi saat ini
-    if (i == keluar)
+    if (i == keluar) // Jika i sama dengan keluar, lewati iterasi saat ini
     {
       continue;
     }
-    // Mencetak nilai i ke konsol
-    cout << i << " ";
+    cout << i << " "; // Mencetak nilai i ke konsol
   }
-  // Mencetak "Melewati angka 4" ke konsol
-  cout << "\nMelewati angka " << keluar;
+  cout << "\nMelewati angka " << keluar; // Mencetak "Melewati angka 4" ke konsol
 
   return 0;
 }
