@@ -7,14 +7,18 @@ int main() {
 
   string kelompokEnam[] = {"Arga", "Dimas", "Ilham", "Abbad", "Firman"};
 
+  cout << "Anggota: ";
+
   for (string anggota : kelompokEnam) {
-    cout << anggota << '\n';
+    cout << anggota << " ";
   }
 
-  int angka[] = {10, 20, 30, 40, 50};
+  int angka[] = {51, 61, 85, 49, 57};
 
-  for (int nilai : angka) {
-    cout << nilai << '\n';
+  cout << "\nNIM: ";
+
+  for (int nim : angka) {
+    cout << nim << " ";
   }
   return 0;
 }
