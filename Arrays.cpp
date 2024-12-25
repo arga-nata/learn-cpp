@@ -2,7 +2,8 @@
 #include <iostream>
 using namespace std;
 
-int main() {
+int main()
+{
   // array = struktur data yang dapat menyimpan beberapa nilai
   // nilai diakses menggunakan nomor indeks "seperti variabel yang menyimpan
   // banyak nilai"
@@ -20,13 +21,15 @@ int main() {
   int size = sizeof(array) / sizeof(array)[0];
 
   // Menginput elemen-elemen di array
-  for (int i = 0; i < size; i++) {
+  for (int i = 0; i < size; i++)
+  {
     cin >> array[i];
   }
 
   // Menampilkan elemen- elemen di array
   cout << "Elemen-elemen array: ";
-  for (int i = 0; i < size; i++) {
+  for (int i = 0; i < size; i++)
+  {
     cout << array[i] << " ";
   }
 

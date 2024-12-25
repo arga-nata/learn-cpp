@@ -3,5 +3,11 @@
         "xutility": "cpp",
         "iostream": "cpp",
         "xstring": "cpp"
+    },
+    "files.exclude": {
+        "**/*.exe": true
+    },
+    "search.exclude": {
+        "**/*.exe": true
     }
 }

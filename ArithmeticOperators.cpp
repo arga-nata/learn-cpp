@@ -1,6 +1,7 @@
 #include <iostream>
 
-int main() {
+int main()
+{
   // operator aritmatika = mengembalikan hasil dari operasi aritmatika tertentu
   // (+ - * /)
 

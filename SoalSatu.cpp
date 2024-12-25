@@ -11,16 +11,16 @@ int main() {
   int baris = sizeof(matriks1) / sizeof(matriks1)[0];
   int kolom = sizeof(matriks1)[0] / sizeof(matriks1)[0][0];
 
-  int hasil1[3][3];
+  int hasil[3][3];
 
   for (int i = 0; i < baris; i++) {
     for (int j = 0; j < kolom; j++) {
-      hasil1[i][j] = matriks1[i][j] + matriks2[i][j];
+      hasil[i][j] = matriks1[i][j] + matriks2[i][j];
     }
   }
   for (int i = 0; i < baris; i++) {
     for (int j = 0; j < kolom; j++) {
-      cout << hasil1[i][j] << " ";
+      cout << hasil[i][j] << " ";
     }
     cout << "\n";
   }

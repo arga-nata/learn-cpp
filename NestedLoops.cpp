@@ -1,33 +1,22 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-  int rows;
-  int columns;
-  char symbol;
+int main()
+{
+  int baris = 3; // Mengatur jumlah baris dalam array 2D
+  int kolom = 4; // Mengatur jumlah kolom dalam array 2D
 
-  for (int i = 1; i <= 3; i++) {
-    for (int j = 1; j <= 10; j++) {
-      cout << j << " ";
+  // Looping untuk setiap baris
+  for (int i = 0; i < baris; i++)
+  {
+    // Looping untuk setiap kolom
+    for (int j = 0; j < kolom; j++)
+    {
+      cout << j << " "; // Mencetak nilai j diikuti oleh spasi
     }
-    cout << '\n';
+    cout << '\n'; // Mencetak karakter newline setelah setiap baris
   }
 
-  cout << "How many rows?: ";
-  cin >> rows;
-
-  cout << "How many columns?: ";
-  cin >> columns;
-
-  cout << "Enter a symbol to use: ";
-  cin >> symbol;
-
-  for (int i = 1; i <= rows; i++) {
-    for (int j = 1; j <= columns; j++) {
-      cout << symbol;
-    }
-    cout << '\n';
-  }
-
-  return 0;
+  return 0; // Mengembalikan 0 untuk menunjukkan bahwa program telah selesai
+            // dengan sukses
 }
