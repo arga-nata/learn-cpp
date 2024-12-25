@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
 
-int main() {
+int main()
+{
   // Array 2 dimensi untuk nama mobil
   string mobil[3][3] = {{"Mustang", "Escape", "F-150"},
                         {"Corvette", "Equinox", "Silverado"},
@@ -14,9 +15,11 @@ int main() {
   int kolom = sizeof(mobil)[0] / sizeof(mobil)[0][0];
 
   // Loop untuk iterasi melalui setiap baris
-  for (int i = 0; i < baris; i++) {
+  for (int i = 0; i < baris; i++)
+  {
     // Loop untuk iterasi melalui setiap kolom
-    for (int j = 0; j < kolom; j++) {
+    for (int j = 0; j < kolom; j++)
+    {
       // Cetak elemen array
       cout << mobil[i][j] << " ";
     }

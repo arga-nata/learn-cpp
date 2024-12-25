@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
 
-int main() {
+int main()
+{
   // memory address = lokasi di memori tempat data disimpan
   // memory address dapat diakses dengan & (operator alamat-of)
 
