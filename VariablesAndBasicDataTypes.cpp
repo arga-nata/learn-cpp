@@ -1,35 +1,37 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-  // integer (whole number)
-  int age = 21;
-  int year = 2023;
-  int days = 7;
+int main()
+{
+  // integer (bilangan bulat)
+  int umur = 21;
+  int tahun = 2023;
+  int minggu = 7;
 
-  // double (number including decimal)
-  double price = 10.99;
+  // double (bilangan desimal)
+  double harga = 10.99;
   double gpa = 2.5;
-  double temperature = 25.1;
+  double suhu = 25.1;
 
-  // single character
-  char grade = 'A';
-  char initial = 'C';
-  char dollarSign = '$';
+  // char (karakter tunggal)
+  char nilai = 'S';
+  char inisial = 'A';
+  char tandaDollar = '$'; // tanda dolar
 
-  // boolean (true of false)
+  // boolean (benar atau salah)
   bool student = false;
   bool power = true;
   bool forSale = true;
 
-  // string (object that represents a sequence of text)
-  string name = "Arga";
-  string day = "Friday";
-  string food = "Pizza";
-  string address = "123 Fake st.";
+  // string (objek yang mewakili urutan teks)
+  string nama = "Arga";
+  string hari = "Jumat";
+  string makanan = "Pizza";
+  string alamat = "123 Fake st.";
 
-  cout << "Hello " << name << '\n';
-  cout << "You are " << age << " years old";
+  // Mencetak teks ke konsol
+  cout << "Halo " << nama << '\n';
+  cout << "Kamu berumur " << umur << " tahun";
 
   return 0;
 }
