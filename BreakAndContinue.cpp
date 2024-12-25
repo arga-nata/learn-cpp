@@ -2,15 +2,20 @@
 using namespace std;
 
 int main() {
-  // break = break out of a loop
-  // continue = skip current iteration
+  // break = keluar dari loop
+  // continue = lewati iterasi saat ini
 
-  for (int i = 1; i <= 20; i++) {
-    if (i == 13) {
+  cout << "Angka: ";
+
+  int breaks = 4;
+
+  for (int i = 1; i <= 10; i++) {
+    if (i == breaks) {
       continue;
     }
-    cout << i << '\n';
+    cout << i << " ";
   }
+  cout << "\nMelewati angka " << breaks;
 
   return 0;
 }
