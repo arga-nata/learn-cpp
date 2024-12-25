@@ -1,11 +1,15 @@
-#include <cmath>    // Mengimpor pustaka cmath untuk fungsi matematika
-#include <iostream> // Mengimpor pustaka iostream untuk input dan output
+#include <cmath>
+#include <iostream>
 using namespace std;
 
-int main() {
-  double a; // Mendeklarasikan variabel a dengan tipe double
-  double b; // Mendeklarasikan variabel b dengan tipe double
-  double c; // Mendeklarasikan variabel c dengan tipe double
+int main()
+{
+  // Mendeklarasikan variabel a dengan tipe double
+  double a;
+  // Mendeklarasikan variabel b dengan tipe double
+  double b;
+  // Mendeklarasikan variabel c dengan tipe double
+  double c;
 
   // Meminta pengguna untuk memasukkan panjang sisi A
   cout << "Masukkan sisi A: ";
@@ -21,6 +25,5 @@ int main() {
   // Menampilkan hasil panjang sisi C
   cout << "Sisi C: " << c;
 
-  return 0; // Mengembalikan nilai 0 untuk menunjukkan bahwa program berakhir
-            // dengan sukses
+  return 0;
 }
