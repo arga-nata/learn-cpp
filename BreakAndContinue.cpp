@@ -3,19 +3,25 @@ using namespace std;
 
 int main()
 {
-  cout << "Angka: "; // Mencetak "Angka: " ke konsol
+  // Mencetak "Angka: " ke konsol
+  cout << "Angka: ";
 
-  int keluar = 4; // Mendefinisikan variabel keluar dengan nilai 4
+  // Mendefinisikan variabel skip dengan nilai 4
+  int skip = 4;
 
-  for (int i = 1; i <= 10; i++) // Loop dari 1 hingga 10
+  // Loop dari 1 hingga 10
+  for (int i = 1; i <= 10; i++)
   {
-    if (i == keluar) // Jika i sama dengan keluar, lewati iterasi saat ini
+    // Jika i sama dengan skip, lewati iterasi saat ini
+    if (i == skip)
     {
       continue;
     }
-    cout << i << " "; // Mencetak nilai i ke konsol
+    // Mencetak nilai i ke konsol
+    cout << i << " ";
   }
-  cout << "\nMelewati angka " << keluar; // Mencetak "Melewati angka 4" ke konsol
+  // Mencetak "Melewati angka 4" ke konsol
+  cout << "\nMelewati angka " << skip;
 
   return 0;
 }
