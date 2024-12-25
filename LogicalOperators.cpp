@@ -1,5 +1,5 @@
-#include <iostream>  // Mengimpor pustaka input-output standar
-using namespace std; // Menggunakan namespace standar
+#include <iostream>
+using namespace std;
 
 int main()
 {
