@@ -9,18 +9,18 @@ int main()
   // Mendefinisikan variabel nilai dengan nilai 50
   int nilai = 50;
   // Jika grade >= 60, cetak "Ganjil", jika tidak, cetak "Genap"
-  nilai >= 60 ? cout << "Ganjil" : cout << "Genap";
+  nilai >= 60 ? cout << "Ganjil\n" : cout << "Genap\n";
 
   // Mendefinisikan variabel number dengan nilai 9
-  int number = 9;
-  // Jika number % 2 menghasilkan 1 (ganjil), cetak "ODD", jika tidak, cetak "EVEN"
-  number % 2 ? cout << "Ganjil" : cout << "Genap";
+  int angka = 9;
+  // Jika angka % 2 menghasilkan 1 (ganjil), cetak "Ganjil", jika tidak, cetak "Genap"
+  angka % 2 ? cout << "Ganjil\n" : cout << "Genap\n";
 
-  // Mendefinisikan variabel boolean hungry dengan nilai false
-  bool hungry = false;
-  // Jika hungry bernilai true, cetak "You are hungry", jika tidak, cetak "You are full"
-  hungry ? cout << "You are hungry" : cout << "You are full";
-  // cout << (hungry ? "You are hungry" : "You are full");
+  // Mendefinisikan variabel boolean lapar dengan nilai false
+  bool lapar = false;
+  // Jika lapar bernilai true, cetak "Kamu lapar", jika tidak, cetak "Kamu kenyang"
+  lapar ? cout << "Kamu lapar\n" : cout << "Kamu kenyang\n";
+  // cout << (lapar ? "Kamu lapar" : "Kamu kenyang");
 
   return 0;
 }
