@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
 
-int main() {
+int main()
+{
   // foreach loop = loop yang mempermudah traversing (penjelajahan) melalui
   // kumpulan data yang dapat diiterasi
 
@@ -11,19 +12,22 @@ int main() {
   cout << "Anggota: "; // Cetak "Anggota: "
 
   // Foreach loop untuk iterasi melalui array nama
-  for (string anggota : kelompokEnam) {
+  for (string anggota : kelompokEnam)
+  {
     cout << anggota << " "; // Cetak setiap nama diikuti dengan spasi
   }
 
   // Array angka
   int angka[] = {51, 61, 85, 49, 57};
 
-  cout << "\nNIM: "; // Cetak "\nNIM: " (baris baru dan "NIM: ")
+  // Cetak "\nNIM: " (baris baru dan "NIM: ")
+  cout << "\nNIM: ";
 
   // Foreach loop untuk iterasi melalui array angka
-  for (int nim : angka) {
+  for (int nim : angka)
+  {
     cout << nim << " "; // Cetak setiap angka diikuti dengan spasi
   }
 
-  return 0; // Kembalikan nilai 0 untuk menunjukkan penyelesaian yang sukses
+  return 0;
 }
