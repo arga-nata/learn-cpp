@@ -1,30 +1,37 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-  int num;
-  int guess;
-  int tries;
+int main()
+{
+  int angka;
+  int tebakan;
+  int percobaan;
 
   srand(time(NULL));
-  num = rand() % 100 + 1;
+  angka = rand() % 100 + 1;
 
   cout << "****** NUMBER GUESSING GAME ******\n";
 
-  do {
-    cout << "Enter a guess between (1 - 100): ";
-    cin >> guess;
-    tries++;
+  do
+  {
+    cout << "Masukkan tebakan antara (1 - 100): ";
+    cin >> tebakan;
+    percobaan++;
 
-    if (guess > num) {
-      cout << "Too high!\n";
-    } else if (guess < num) {
-      cout << "Too low!\n";
-    } else if (guess == num) {
-      cout << "Correct! # of tries: " << tries << '\n';
+    if (tebakan > angka)
+    {
+      cout << "Terlalu tinggi!\n";
+    }
+    else if (tebakan < angka)
+    {
+      cout << "Terlalu rendah!\n";
+    }
+    else if (tebakan == angka)
+    {
+      cout << "Benar! Jumlah percobaan: " << percobaan << '\n';
     }
 
-  } while (guess != num);
+  } while (tebakan != angka);
 
   cout << "**********************************";
 
