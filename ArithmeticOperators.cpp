@@ -5,6 +5,7 @@ int main()
   // operator aritmatika = mengembalikan hasil dari operasi aritmatika tertentu
   // (+ - * /)
 
+  // Mendefinisikan variabel mahasiswa dengan nilai 28
   int mahasiswa = 28;
 
   // Penambahan
