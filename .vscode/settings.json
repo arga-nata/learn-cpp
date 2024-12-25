@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "xutility": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "xstring": "cpp"
     }
 }

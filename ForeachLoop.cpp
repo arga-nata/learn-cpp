@@ -2,17 +2,19 @@
 using namespace std;
 
 int main() {
-  // foreach loop = loop that eases the traversal over an iterable data set
+  // foreach loop = loop yang mempermudah traversing (penjelajahan) melalui
+  // kumpulan data yang dapat diiterasi
 
-  string students[] = {"Spongebob", "Patrick", "Squidward", "Sandy"};
+  string kelompokEnam[] = {"Arga", "Dimas", "Ilham", "Abbad", "Firman"};
 
-  for (string studentss : students) {
-    cout << studentss << '\n';
+  for (string anggota : kelompokEnam) {
+    cout << anggota << '\n';
   }
 
-  int grades[] = {65, 72, 81, 93};
-  for (int gradess : grades) {
-    cout << gradess << '\n';
+  int angka[] = {10, 20, 30, 40, 50};
+
+  for (int nilai : angka) {
+    cout << nilai << '\n';
   }
   return 0;
 }
