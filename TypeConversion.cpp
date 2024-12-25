@@ -1,16 +1,21 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-  // type conversion = conversion a value of one data type to another
-  // implicit = automatic
-  // Explicit = Precede value with new data type (int)
+int main()
+{
+  // konversi tipe = mengubah nilai dari satu tipe data ke tipe data lainnya
+  // implicit = otomatis
+  // explicit = Didahului oleh tipe data baru (int)
 
-  int correct = 8;
-  int questions = 10;
-  double score = correct / (double)questions * 100;
+  // Mendefinisikan variabel 'benar' dengan nilai 8
+  int benar = 8;
+  // Mendefinisikan variabel 'pertanyaan' dengan nilai 10
+  int pertanyaan = 10;
+  // Mengonversi 'pertanyaan' menjadi double secara eksplisit dan menghitung skor
+  double skor = benar / (double)pertanyaan * 100;
 
-  cout << score << "%";
+  // Mencetak nilai 'score' ke konsol
+  cout << skor << "%";
 
   return 0;
 }
