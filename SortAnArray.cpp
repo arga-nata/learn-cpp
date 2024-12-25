@@ -13,5 +13,9 @@ int main() {
   auto max = max_element(array, array + size);
   cout << "Nilai Maksimum: " << *max << '\n';
 
+  // Menggunakan fungsi max_element untuk mencari elemen maksimum
+  auto min = min_element(array, array + size);
+  cout << "Nilai Minimum: " << *min << '\n';
+
   return 0;
 }

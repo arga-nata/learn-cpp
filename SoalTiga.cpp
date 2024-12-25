@@ -1,4 +1,4 @@
-// Berikan contoh program yang mana menggunakan sizeof() untuk mengetahuijumlah
+// Berikan contoh program yang mana menggunakan sizeof() untuk mengetahui jumlah
 // dari panjang array.
 
 #include <iostream>

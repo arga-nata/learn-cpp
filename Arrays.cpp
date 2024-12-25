@@ -25,6 +25,7 @@ int main() {
   }
 
   // Menampilkan elemen- elemen di array
+  cout << "Elemen-elemen array: ";
   for (int i = 0; i < size; i++) {
     cout << array[i] << " ";
   }
@@ -35,3 +36,5 @@ int main() {
 
   return 0;
 }
+
+//
