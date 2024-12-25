@@ -1,27 +1,29 @@
 #include <iostream>
 using namespace std;
 
-class Car {
+class Car
+{
 public:
-  string make;
+  string buatan;
   string model;
-  int year;
-  string color;
+  int tahun;
+  string warna;
 
-  void accelerate() { cout << "You step on the gas!\n"; }
-  void brake() { cout << "You step on the brake!\n"; }
+  void accelerate() { cout << "Kamu menginjak gas!\n"; }
+  void brake() { cout << "Kamu menginjak rem!\n"; }
 };
-int main() {
+int main()
+{
   Car car1;
-  car1.make = "Ford";
+  car1.buatan = "Ford";
   car1.model = "Mustang";
-  car1.year = 2023;
-  car1.color = "silver";
+  car1.tahun = 2023;
+  car1.warna = "Silver";
 
-  cout << car1.make << '\n';
+  cout << car1.buatan << '\n';
   cout << car1.model << '\n';
-  cout << car1.year << '\n';
-  cout << car1.color << '\n';
+  cout << car1.tahun << '\n';
+  cout << car1.warna << '\n';
 
   car1.accelerate();
   car1.brake();
