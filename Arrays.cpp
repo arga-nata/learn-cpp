@@ -1,24 +1,37 @@
+#include <algorithm>
 #include <iostream>
 using namespace std;
 
 int main() {
-  // array = a data structure that can hold multiple values value are accessed
-  // by an index number "kind of like a variable that holds multiple values"
+  // array = struktur data yang dapat menyimpan beberapa nilai
+  // nilai diakses menggunakan nomor indeks "seperti variabel yang menyimpan
+  // banyak nilai"
 
-  string cars[] = {"Corvette", "Mustang", "Camry"};
+  // Deklarasi array integer dengan 5 elemen
+  // int array[5];
 
-  cars[0] = "Camaro";
+  // Deklarasi dan inisialisasi array integer dengan 5 elemen
+  int array[] = {2, 5, 3, 4, 1};
 
-  cout << cars[0] << '\n';
-  cout << cars[1] << '\n';
-  cout << cars[2] << '\n';
+  // Mengakses elemen pertama
+  int firstElement = array[0];
 
-  double prices[] = {5.00, 7.50, 9.99, 15.00};
+  // Menghitung jumlah elemen dalam array
+  int size = sizeof(array) / sizeof(array)[0];
 
-  cout << prices[0] << '\n';
-  cout << prices[1] << '\n';
-  cout << prices[2] << '\n';
-  cout << prices[3] << '\n';
+  // Menginput elemen-elemen di array
+  for (int i = 0; i < size; i++) {
+    cin >> array[i];
+  }
+
+  // Menampilkan elemen- elemen di array
+  for (int i = 0; i < size; i++) {
+    cout << array[i] << " ";
+  }
+
+  // Menggunakan fungsi max_element untuk mencari elemen maksimum
+  auto max = max_element(array, array + size);
+  cout << "Nilai Maksimum: " << *max << '\n';
 
   return 0;
 }
