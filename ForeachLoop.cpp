@@ -5,7 +5,7 @@ int main() {
   // foreach loop = loop yang mempermudah traversing (penjelajahan) melalui
   // kumpulan data yang dapat diiterasi
 
-  string kelompokEnam[] = {"Arga", "Dimas", "Ilham", "Abbad", "Firman"};
+  string kelompokEnam[] = {"Arganata", "Dimas", "Ilham", "Abbad", "Firman"};
 
   cout << "Anggota: ";
 
