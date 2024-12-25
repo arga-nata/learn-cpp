@@ -1,29 +1,17 @@
+#include <algorithm>
 #include <iostream>
 using namespace std;
 
-void sort(int array[], int size);
-
 int main() {
-  int array[] = {10, 1, 9, 2, 8, 3, 7, 4, 6, 5};
-  int size = sizeof(array) / sizeof(int);
+  // Deklarasi dan inisialisasi array integer dengan 5 elemen
+  int array[] = {2, 5, 3, 4, 1};
 
-  sort(array, size);
+  // Menghitung jumlah elemen dalam array
+  int size = sizeof(array) / sizeof(array)[0];
 
-  for (int element : array) {
-    cout << element << " ";
-  }
+  // Menggunakan fungsi max_element untuk mencari elemen maksimum
+  auto max = max_element(array, array + size);
+  cout << "Nilai Maksimum: " << *max << '\n';
 
   return 0;
-}
-void sort(int array[], int size) {
-  int temp;
-  for (int i = 0; i < size - 1; i++) {
-    for (int j = 0; j < size - i - 1; j++) {
-      if (array[j] > array[j + 1]) {
-        temp = array[j];
-        array[j] = array[j + 1];
-        array[j + 1] = temp;
-      }
-    }
-  }
 }
