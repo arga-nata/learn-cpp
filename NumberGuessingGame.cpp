@@ -1,4 +1,4 @@
-#include <iostream> // Mengimpor pustaka iostream untuk input dan output
+#include <iostream>
 using namespace std;
 
 int main()
