@@ -2,16 +2,24 @@
 using namespace std;
 
 int main() {
-  // memory address = a location in memory where data is stored
-  // a memory address can accessed with & (address-of operator)
+  // memory address = lokasi di memori tempat data disimpan
+  // memory address dapat diakses dengan & (operator alamat-of)
 
-  string name = "Arganata";
-  int age = 21;
-  bool student = true;
+  // Variabel string bernama 'nama' dengan nilai "Arganata"
+  string nama = "Arganata";
 
-  cout << &name << '\n';
-  cout << &age << '\n';
-  cout << &student << '\n';
+  // Variabel integer bernama 'umur' dengan nilai 21
+  int umur = 21;
+
+  // Variabel boolean bernama 'mahasiswa' dengan nilai true (benar)
+  bool mahasiswa = true;
+
+  // Cetak alamat memori dari variabel 'nama'
+  cout << &nama << '\n';
+  // Cetak alamat memori dari variabel 'umur'
+  cout << &umur << '\n';
+  // Cetak alamat memori dari variabel 'mahasiswa'
+  cout << &mahasiswa << '\n';
 
   return 0;
 }
