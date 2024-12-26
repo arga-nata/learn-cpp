@@ -2,7 +2,8 @@
     "files.associations": {
         "xutility": "cpp",
         "iostream": "cpp",
-        "xstring": "cpp"
+        "xstring": "cpp",
+        "vector": "cpp"
     },
     "files.exclude": {
         "**/*.exe": true
