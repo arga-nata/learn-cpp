@@ -8,9 +8,9 @@ void menghitungInvers(int ukuran, int determinan, int transpose[3][3]);
 
 int main()
 {
-    int matriks[3][3] = {{4, 2, 8},
-                         {2, 1, 5},
-                         {3, 2, 4}};
+    int matriks[3][3] = {{1, 2, 3},
+                         {4, 5, 6},
+                         {7, 8, 9}};
 
     int ukuran = sizeof(matriks) / sizeof(matriks[0]);
 
@@ -32,7 +32,17 @@ int main()
     int determinan = menghitungDeterminan(ukuran, matriks);
     int adjoin[3][3];
 
-    menghitungAdjoin(ukuran, matriks, adjoin);
+    if (determinan != 0)
+    {
+        menghitungAdjoin(ukuran, matriks, adjoin);
+    }
+    else
+    {
+        cout << "---------------------------------------------\n";
+        cout << "Tidak memiliki invers karena determinan = 0";
+        cout << "\n---------------------------------------------\n";
+        return 0;
+    }
 
     cout << "------------------------------------------\n";
     cout << "Determinan: " << determinan;
