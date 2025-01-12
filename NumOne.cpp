@@ -1,10 +1,9 @@
 #include <iostream>
 using namespace std;
 
-int menghitungDeterminan(int ukuran, int determinan, int matriks[3][3]);
+int menghitungDeterminan(int ukuran, int matriks[3][3]);
 void menghitungAdjoin(int ukuran, int matriks[3][3], int adjoin[3][3]);
-void transposeMatriks()
-
+void transposeMatriks(int ukuran, int matriks[3][3], int transpose[3][3]);
 
 int main()
 {
@@ -28,7 +27,7 @@ int main()
     }
     cout << "=============\n";
 
-    int determinan = menghitungDeterminan(ukuran, determinan, matriks);
+    int determinan = menghitungDeterminan(ukuran, matriks);
 
     int adjoin[3][3];
     menghitungAdjoin(ukuran, matriks, adjoin);
@@ -46,11 +45,27 @@ int main()
         cout << "|\n";
     }
 
+    int transpose[3][3];
+    transposeMatriks(ukuran, matriks, transpose);
+
+    cout << "=============\n";
+    cout << "Transpose A: \n";
+    cout << "=============\n";
+    for (int i = 0; i < ukuran; i++)
+    {
+        for (int j = 0; j < ukuran; j++)
+        {
+            cout << "| " << transpose[i][j] << " ";
+        }
+        cout << "|\n";
+    }
+
     return 0;
 }
 
-int menghitungDeterminan(int ukuran, int determinan, int matriks[3][3])
+int menghitungDeterminan(int ukuran, int matriks[3][3])
 {
+    int determinan = 0;
     for (int i = 0; i < ukuran; i++)
     {
         determinan += matriks[0][i] * (matriks[1][(i + 1) % 3] * matriks[2][(i + 2) % 3] - matriks[2][(i + 1) % 3] * matriks[1][(i + 2) % 3]);
@@ -71,4 +86,15 @@ void menghitungAdjoin(int ukuran, int matriks[3][3], int adjoin[3][3])
     adjoin[2][0] = matriks[0][1] * matriks[1][2] - matriks[1][1] * matriks[0][2];
     adjoin[2][1] = -(matriks[0][0] * matriks[1][2] - matriks[1][0] * matriks[0][2]);
     adjoin[2][2] = matriks[0][0] * matriks[1][1] - matriks[1][0] * matriks[0][1];
+}
+
+void transposeMatriks(int ukuran, int matriks[3][3], int transpose[3][3])
+{
+    for (int i = 0; i < ukuran; i++)
+    {
+        for (int j = 0; j < ukuran; j++)
+        {
+            transpose[j][i] = matriks[i][j];
+        }
+    }
 }
