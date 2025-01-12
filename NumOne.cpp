@@ -14,10 +14,11 @@ int main()
 
     int ukuran = sizeof(matriks) / sizeof(matriks[0]);
 
-    cout << "=============\n";
+    cout << "==========================================\n";
+    cout << "=       Menghitung Invers Matriks        =\n";
+    cout << "==========================================\n";
     cout << "Matriks A: \n";
-    cout << "=============\n";
-
+    cout << "------------------------------------------\n";
     for (int i = 0; i < ukuran; i++)
     {
         for (int j = 0; j < ukuran; j++)
@@ -26,17 +27,18 @@ int main()
         }
         cout << "|\n";
     }
-    cout << "=============\n";
 
     int determinan = menghitungDeterminan(ukuran, matriks);
-
     int adjoin[3][3];
+
     menghitungAdjoin(ukuran, matriks, adjoin);
 
-    cout << "Determinan: " << determinan << '\n';
-    cout << "=============\n";
+    cout << "------------------------------------------\n";
+    cout << "Determinan: " << determinan;
+    cout << "\n------------------------------------------\n";
     cout << "Adjoin A: \n";
-    cout << "=============\n";
+    cout << "------------------------------------------\n";
+
     for (int i = 0; i < ukuran; i++)
     {
         for (int j = 0; j < ukuran; j++)
@@ -49,9 +51,10 @@ int main()
     int transpose[3][3];
     transposeMatriks(ukuran, adjoin, transpose);
 
-    cout << "=============\n";
+    cout << "------------------------------------------\n";
     cout << "Transpose A: \n";
-    cout << "=============\n";
+    cout << "------------------------------------------\n";
+
     for (int i = 0; i < ukuran; i++)
     {
         for (int j = 0; j < ukuran; j++)
@@ -60,11 +63,13 @@ int main()
         }
         cout << "|\n";
     }
-    cout << "=============\n";
+    cout << "------------------------------------------\n";
     cout << "Invers A: \n";
-    cout << "=============\n";
+    cout << "------------------------------------------\n";
 
     menghitungInvers(ukuran, determinan, transpose);
+
+    cout << "------------------------------------------\n";
 
     return 0;
 }

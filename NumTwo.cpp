@@ -18,6 +18,7 @@ int main()
     cout << "= Menghitung Mean, Median dan Standar Deviasi =\n";
     cout << "===============================================\n";
     cout << "Mean: " << mean;
+    cout << "\n-----------------------------------------------\n";
 
     menghitungMedian(nilai, ukuran);
     menghitungStandarDeviasi(ukuran, nilai, mean);
@@ -42,7 +43,7 @@ void menghitungMedian(int nilai[], int ukuran)
 
     int median;
 
-    cout << "\nUrutan: ";
+    cout << "Urutan: ";
 
     sort(nilai, nilai + ukuran);
 
@@ -60,7 +61,9 @@ void menghitungMedian(int nilai[], int ukuran)
     {
         median = nilai[ukuran / 2];
     }
-    cout << "\nMedian: " << median;
+    cout << "\n-----------------------------------------------\n";
+    cout << "Median: " << median;
+    cout << "\n-----------------------------------------------\n";
 }
 
 void menghitungStandarDeviasi(int ukuran, int nilai[], int mean)
@@ -74,6 +77,6 @@ void menghitungStandarDeviasi(int ukuran, int nilai[], int mean)
 
     hasil = variansi / ukuran;
     double standarDeviansi = sqrt(hasil);
-    cout << "\nStandar deviasi: " << standarDeviansi;
-    cout << "\n===============================================";
+    cout << "Standar Deviasi: " << standarDeviansi;
+    cout << "\n-----------------------------------------------";
 }
