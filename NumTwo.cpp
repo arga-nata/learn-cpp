@@ -14,11 +14,12 @@ int main()
 
     double mean = menghitungMean(ukuran, nilai);
 
-    cout << "============================\n";
-    cout << "Mean: " << mean << "\n";
-    cout << "============================\n";
-    menghitungMedian(nilai, ukuran);
+    cout << "===============================================\n";
+    cout << "= Menghitung Mean, Median dan Standar Deviasi =\n";
+    cout << "===============================================\n";
+    cout << "Mean: " << mean;
 
+    menghitungMedian(nilai, ukuran);
     menghitungStandarDeviasi(ukuran, nilai, mean);
 
     return 0;
@@ -27,10 +28,12 @@ int main()
 double menghitungMean(int ukuran, int nilai[])
 {
     double mean = 0;
+
     for (int i = 0; i < ukuran; i++)
     {
         mean += nilai[i];
     }
+
     return mean / ukuran;
 }
 
@@ -39,7 +42,7 @@ void menghitungMedian(int nilai[], int ukuran)
 
     int median;
 
-    cout << "Urutan: ";
+    cout << "\nUrutan: ";
 
     sort(nilai, nilai + ukuran);
 
@@ -47,7 +50,7 @@ void menghitungMedian(int nilai[], int ukuran)
     {
         cout << nilai[i] << " ";
     }
-    cout << "\n============================\n";
+
     if (ukuran % 2 == 0)
     {
 
@@ -57,7 +60,7 @@ void menghitungMedian(int nilai[], int ukuran)
     {
         median = nilai[ukuran / 2];
     }
-    cout << "Median: " << median;
+    cout << "\nMedian: " << median;
 }
 
 void menghitungStandarDeviasi(int ukuran, int nilai[], int mean)
@@ -69,14 +72,8 @@ void menghitungStandarDeviasi(int ukuran, int nilai[], int mean)
         variansi += pow(nilai[i] - mean, 2);
     }
 
-    cout << "\n============================";
-    cout << '\n'
-         << "Variansi: " << variansi << "/" << ukuran << '\n';
     hasil = variansi / ukuran;
-    cout << "============================\n";
-    cout << "Hasil variansi: " << hasil;
-    cout << "\n============================\n";
     double standarDeviansi = sqrt(hasil);
-    cout << "Standar deviasi: " << standarDeviansi;
-    cout << "\n============================";
+    cout << "\nStandar deviasi: " << standarDeviansi;
+    cout << "\n===============================================";
 }
