@@ -3,7 +3,8 @@ using namespace std;
 
 int menghitungDeterminan(int ukuran, int matriks[3][3]);
 void menghitungAdjoin(int ukuran, int matriks[3][3], int adjoin[3][3]);
-void transposeMatriks(int ukuran, int matriks[3][3], int transpose[3][3]);
+void transposeMatriks(int ukuran, int adjoin[3][3], int transpose[3][3]);
+void menghitungInvers(int ukuran, int determinan, int transpose[3][3]);
 
 int main()
 {
@@ -46,7 +47,7 @@ int main()
     }
 
     int transpose[3][3];
-    transposeMatriks(ukuran, matriks, transpose);
+    transposeMatriks(ukuran, adjoin, transpose);
 
     cout << "=============\n";
     cout << "Transpose A: \n";
@@ -59,6 +60,11 @@ int main()
         }
         cout << "|\n";
     }
+    cout << "=============\n";
+    cout << "Invers A: \n";
+    cout << "=============\n";
+
+    menghitungInvers(ukuran, determinan, transpose);
 
     return 0;
 }
@@ -88,13 +94,35 @@ void menghitungAdjoin(int ukuran, int matriks[3][3], int adjoin[3][3])
     adjoin[2][2] = matriks[0][0] * matriks[1][1] - matriks[1][0] * matriks[0][1];
 }
 
-void transposeMatriks(int ukuran, int matriks[3][3], int transpose[3][3])
+void transposeMatriks(int ukuran, int adjoin[3][3], int transpose[3][3])
 {
     for (int i = 0; i < ukuran; i++)
     {
         for (int j = 0; j < ukuran; j++)
         {
-            transpose[j][i] = matriks[i][j];
+            transpose[j][i] = adjoin[i][j];
         }
+    }
+}
+
+void menghitungInvers(int ukuran, int determinan, int transpose[3][3])
+{
+    float invers[3][3];
+
+    for (int i = 0; i < ukuran; i++)
+    {
+        for (int j = 0; j < ukuran; j++)
+        {
+            invers[i][j] = (1.0 / determinan) * transpose[i][j];
+        }
+    }
+
+    for (int i = 0; i < ukuran; i++)
+    {
+        for (int j = 0; j < ukuran; j++)
+        {
+            cout << "| " << invers[i][j] << " ";
+        }
+        cout << "|\n";
     }
 }
