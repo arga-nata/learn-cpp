@@ -19,6 +19,7 @@ int main()
     cout << "==========================================\n";
     cout << "Matriks A: \n";
     cout << "------------------------------------------\n";
+
     for (int i = 0; i < ukuran; i++)
     {
         for (int j = 0; j < ukuran; j++)
@@ -49,6 +50,7 @@ int main()
     }
 
     int transpose[3][3];
+
     transposeMatriks(ukuran, adjoin, transpose);
 
     cout << "------------------------------------------\n";
