@@ -22,7 +22,8 @@ int main()
 void drawBoard(char *spaces)
 {
     cout << "     |     |     " << '\n';
-    cout << "  " << spaces[0] << "   |     |     " << '\n';
+    cout << "  " << spaces[0] << "   |   " << spaces[1] << "  |  " << spaces[2] << "   " << '\n';
+    cout << "_____|_____|_____" << '\n';
 }
 
 void playerMove(char *spaces, char player) {}
