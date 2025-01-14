@@ -16,6 +16,12 @@ int main()
     bool running = true;
 
     drawBoard(spaces);
+
+    while (running)
+    {
+        playerMove(spaces, player);
+    }
+
     return 0;
 }
 
@@ -34,7 +40,7 @@ void drawBoard(char *spaces)
     cout << '\n';
 }
 
-void playerMove(char *spaces, char player) {}
+void playerMove(char *spaces, char player) { int number; }
 void computerMove(char *spaces, char computer) {}
 bool checkWinner(char *spaces, char player, char computer) { return 0; }
 bool checkTie(char *spaces) { return 0; }
