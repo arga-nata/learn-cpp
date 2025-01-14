@@ -13,10 +13,17 @@ int main()
     char spaces[9] = {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '};
     char player = 'X';
     char computer = 'O';
+    bool running = true;
+
+    drawBoard(spaces);
     return 0;
 }
 
-void drawBoard(char *spaces) {}
+void drawBoard(char *spaces)
+{
+    cout << "     |     |     " << '\n';
+    cout << "  " << spaces[0] << "   |     |     " << '\n';
+}
 
 void playerMove(char *spaces, char player) {}
 void computerMove(char *spaces, char computer) {}
