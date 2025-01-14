@@ -20,6 +20,7 @@ int main()
     while (running)
     {
         playerMove(spaces, player);
+        drawBoard(spaces);
     }
 
     return 0;
@@ -51,6 +52,7 @@ void playerMove(char *spaces, char player)
         if (spaces[number] == ' ')
         {
             spaces[number] = player;
+            break;
         }
 
     } while (!number > 0 || !number < 8);
