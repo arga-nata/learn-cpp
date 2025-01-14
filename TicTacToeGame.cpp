@@ -40,7 +40,21 @@ void drawBoard(char *spaces)
     cout << '\n';
 }
 
-void playerMove(char *spaces, char player) { int number; }
+void playerMove(char *spaces, char player)
+{
+    int number;
+    do
+    {
+        cout << "Enter a spot to place a marker (1-9)";
+        cin >> number;
+        number--;
+        if (spaces[number] == ' ')
+        {
+            spaces[number] = player;
+        }
+
+    } while (!number > 0 || !number < 8);
+}
 void computerMove(char *spaces, char computer) {}
 bool checkWinner(char *spaces, char player, char computer) { return 0; }
 bool checkTie(char *spaces) { return 0; }
