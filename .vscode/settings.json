@@ -10,5 +10,6 @@
     },
     "search.exclude": {
         "**/*.exe": true
-    }
+    },
+    "discord.enabled": true
 }
