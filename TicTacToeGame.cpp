@@ -29,6 +29,11 @@ int main()
 
         computerMove(spaces, computer);
         drawBoard(spaces);
+        if (checkWinner(spaces, player, computer))
+        {
+            running = false;
+            break;
+        }
     }
 
     return 0;
@@ -38,13 +43,13 @@ void drawBoard(char *spaces)
 {
     cout << '\n';
     cout << "     |     |     " << '\n';
-    cout << "  " << spaces[0] << "  |   " << spaces[1] << " |  " << spaces[2] << "   " << '\n';
+    cout << "  " << spaces[0] << "  |  " << spaces[1] << "  |  " << spaces[2] << "   " << '\n';
     cout << "_____|_____|_____" << '\n';
     cout << "     |     |     " << '\n';
-    cout << "  " << spaces[3] << "  |   " << spaces[4] << " |  " << spaces[5] << "   " << '\n';
+    cout << "  " << spaces[3] << "  |  " << spaces[4] << "  |  " << spaces[5] << "   " << '\n';
     cout << "_____|_____|_____" << '\n';
     cout << "     |     |     " << '\n';
-    cout << "  " << spaces[6] << "  |   " << spaces[7] << " |  " << spaces[8] << "   " << '\n';
+    cout << "  " << spaces[6] << "  |  " << spaces[7] << "  |  " << spaces[8] << "   " << '\n';
     cout << "     |     |     " << '\n';
     cout << '\n';
 }
@@ -82,9 +87,9 @@ void computerMove(char *spaces, char computer)
 }
 bool checkWinner(char *spaces, char player, char computer)
 {
-    if (spaces[0] == spaces[1] && spaces[1] == spaces[2])
+    if ((spaces[0] != ' ') && (spaces[0] == spaces[1]) && (spaces[1] == spaces[2]))
     {
-        spaces[0] == player ? cout << "YOU WIN!" : cout << "YOU LOSE\n";
+        spaces[0] == player ? cout << "YOU WIN!\n" : cout << "YOU LOSE\n";
     }
 
     return 0;
