@@ -139,4 +139,15 @@ bool checkWinner(char *spaces, char player, char computer)
 
     return true;
 }
-bool checkTie(char *spaces) { return 0; }
+bool checkTie(char *spaces)
+{
+    for (int i = 0; i < 9; i++)
+    {
+        if (spaces[i] == ' ')
+        {
+            return false;
+        }
+    }
+    cout << "IT'S A TIE!\n";
+    return true;
+}
