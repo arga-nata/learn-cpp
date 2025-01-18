@@ -114,6 +114,10 @@ bool checkWinner(char *spaces, char player, char computer)
     {
         spaces[2] == player ? cout << "YOU WIN!\n" : cout << "YOU LOSE!\n";
     }
+    else if ((spaces[0] != ' ') && (spaces[0] == spaces[4]) && (spaces[4] == spaces[8]))
+    {
+        spaces[0] == player ? cout << "YOU WIN!\n" : cout << "YOU LOSE!\n";
+    }
     else
     {
         return false;
