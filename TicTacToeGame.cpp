@@ -106,7 +106,19 @@ bool checkWinner(char *spaces, char player, char computer)
     {
         spaces[0] == player ? cout << "YOU WIN!\n" : cout << "YOU LOSE!\n";
     }
+    else if ((spaces[1] != ' ') && (spaces[1] == spaces[4]) && (spaces[4] == spaces[7]))
+    {
+        spaces[1] == player ? cout << "YOU WIN!\n" : cout << "YOU LOSE!\n";
+    }
+    else if ((spaces[2] != ' ') && (spaces[2] == spaces[5]) && (spaces[5] == spaces[8]))
+    {
+        spaces[2] == player ? cout << "YOU WIN!\n" : cout << "YOU LOSE!\n";
+    }
+    else
+    {
+        return false;
+    }
 
-    return 0;
+    return true;
 }
 bool checkTie(char *spaces) { return 0; }
