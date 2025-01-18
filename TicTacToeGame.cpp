@@ -21,6 +21,14 @@ int main()
     {
         playerMove(spaces, player);
         drawBoard(spaces);
+        if (checkWinner(spaces, player, computer))
+        {
+            running = false;
+            break;
+        }
+
+        computerMove(spaces, computer);
+        drawBoard(spaces);
     }
 
     return 0;
@@ -46,7 +54,7 @@ void playerMove(char *spaces, char player)
     int number;
     do
     {
-        cout << "Enter a spot to place a marker (1-9)";
+        cout << "Enter a spot to place a marker (1-9): ";
         cin >> number;
         number--;
         if (spaces[number] == ' ')
@@ -57,6 +65,27 @@ void playerMove(char *spaces, char player)
 
     } while (!number > 0 || !number < 8);
 }
-void computerMove(char *spaces, char computer) {}
-bool checkWinner(char *spaces, char player, char computer) { return 0; }
+void computerMove(char *spaces, char computer)
+{
+    int number;
+    srand(time(NULL));
+
+    while (true)
+    {
+        number = rand() % 9;
+        if (spaces[number] == ' ')
+        {
+            spaces[number] = computer;
+            break;
+        }
+    }
+}
+bool checkWinner(char *spaces, char player, char computer)
+{
+    if (spaces[0] == spaces[1] && spaces[1] == spaces[2])
+    {
+        spaces[0] == player ? cout << "YOU WIN!" : cout << "YOU LOSE\n";
+    }
+    return 0;
+}
 bool checkTie(char *spaces) { return 0; }
