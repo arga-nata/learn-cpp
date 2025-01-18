@@ -29,10 +29,20 @@ int main()
             running = false;
             break;
         }
+        else if (checkTie(spaces))
+        {
+            running = false;
+            break;
+        }
 
         computerMove(spaces, computer);
         drawBoard(spaces);
         if (checkWinner(spaces, player, computer))
+        {
+            running = false;
+            break;
+        }
+        else if (checkTie(spaces))
         {
             running = false;
             break;
