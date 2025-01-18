@@ -48,6 +48,7 @@ int main()
             break;
         }
     }
+    cout << "Thanks for playing!\n";
 
     return 0;
 }
