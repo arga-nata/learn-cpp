@@ -6,11 +6,11 @@ using namespace std;
 int main()
 {
     vector<string> nama = {"Arga", "Dimas", "Ilham", "Abbad", "Firman"};
-    auto index = find(nama.begin(), nama.end(), "Eko");
+    auto index = find(nama.begin(), nama.end(), "Abbad");
 
     if (index != nama.end())
     {
-        cout << "Elemenm diitemukan pada indeks: " << distance(nama.begin(), index);
+        cout << "Elemen ditemukan pada indeks: " << distance(nama.begin(), index);
     }
     else
     {
