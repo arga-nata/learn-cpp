@@ -21,7 +21,7 @@ int main()
     // Deklarasi dan inisialisasi vector a
     vector<string> a = {"Arga", "Dimas", "Ilham", "Abbad", "Firman"};
 
-    // Menghapus elemen pada indeks-1 (elemen kedua)
+    // Menghapus elemen pada indeks ke-0 (elemen pertama)
     a.erase(a.begin() + 0);
 
     cout << "Anggota Kelompok: ";
