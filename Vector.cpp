@@ -5,12 +5,14 @@ using namespace std;
 
 int main()
 {
-    vector<int> array;
-    int nilai;
+    vector<int> array(4);
+    vector<int> array = {1, 2, 3, 4};
 
-    array.push_back(nilai);
+    array.size();
 
-    // array.pop_back(nilai);
+    array.push_back(5);
+
+    array.pop_back();
 
     array.size();
 
@@ -20,7 +22,10 @@ int main()
 
     array.at(1);
 
-    array.operator[];
+    array.erase(array.begin() + 1);
+    array.erase(array.begin() + 1, array.end() + 3);
+
+    // array.operator[];
 
     return 0;
 }
