@@ -3,7 +3,8 @@
         "xutility": "cpp",
         "iostream": "cpp",
         "xstring": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "ostream": "cpp"
     },
     "files.exclude": {
         "**/*.exe": true
