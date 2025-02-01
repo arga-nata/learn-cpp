@@ -1,6 +1,3 @@
-/*Soal 6: Menghitung Faktor dari Sebuah Angka Tulis program untuk menghitung dan mencetak semua faktor dari sebuah angka
-yang diberikan oleh pengguna.*/
-
 #include <iostream>
 #include <vector>
 using namespace std;
