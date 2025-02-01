@@ -11,7 +11,7 @@ bool checkTie(char *spaces);
 int main()
 {
     cout << "=================\n";
-    cout << "= Tic-Tac-Toe =\n";
+    cout << "=  Tic-Tac-Toe  =\n";
     cout << "=================\n";
     char spaces[9] = {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '};
     char player = 'X';
