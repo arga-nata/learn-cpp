@@ -30,6 +30,8 @@ void menghitungFaktor(int angka, vector<int> &faktor)
         }
     }
 
+    cout << "Faktor dari " << angka << " adalah: ";
+
     for (int i = 0; i < faktor.size(); i++)
     {
         cout << faktor[i] << " ";
