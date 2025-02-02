@@ -1,4 +1,8 @@
 #include <iostream>
 using namespace std;
 
-int main() { return 0; }
+int main()
+{
+    cout << "Input a number: ";
+    return 0;
+}
