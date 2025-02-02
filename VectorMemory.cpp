@@ -1,10 +1,13 @@
 #include <iostream>
+#include <vector>
 using namespace std;
+
+int menghitungFaktor();
 
 int main()
 {
-    int number = 0;
-    cout << "Input a number: ";
-    cin >> number;
+    vector<int> angka;
+    
     return 0;
 }
+int menghitungFaktor() {}
